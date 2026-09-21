@@ -1,0 +1,87 @@
+.main {
+  margin-top: 120px;
+  font-family: $font_family_var;
+  font-weight: 500;
+  font-style: Medium;
+  margin-inline: 120px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 24px;
+  color: $white_color;
+
+  @include tablet {
+    grid-template-columns: repeat(6, 1fr);
+    margin-inline: 72px;
+  }
+
+  @include mobile {
+    grid-template-columns: repeat(2, 1fr);
+    margin-inline: 20px;
+  }
+}
+
+.main__move__free {
+  grid-column: 1 / span 4;
+  font-size: 64px;
+  letter-spacing: -1.5px;
+  line-height: 100%;
+}
+
+.main__move__description {
+  grid-column: 6 / span 6;
+  font-size: 23px;
+  letter-spacing: 0px;
+  line-height: 140%;
+}
+
+@include tablet {
+  .main__move__free {
+    grid-column: 1 / span 3;
+    font-size: 48px;
+  }
+
+  .main__move__description {
+    grid-column: 4 / span 3;
+  }
+}
+
+@include mobile {
+  .main__move__free {
+    grid-column: 1 / -1;
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+
+  .main__move__description {
+    grid-column: 1 / -1;
+  }
+}
+
+.compare__bike {
+  grid-column: 1 / -1;
+  margin-top: 164px;
+
+    @include tablet {
+    margin-top: 132px;
+  }
+
+  @include mobile {
+    margin-top: 92px;
+  }
+}
+
+.compare__bikes__heading {
+  line-height: 100%;
+  font-size: 64px;
+  text-align: center;
+  letter-spacing: -1.5px;
+
+  @include tablet {
+    font-size: 42px;
+  }
+
+  @include mobile {
+    font-size: 42px;
+    line-height: 32px;
+  }
+}
