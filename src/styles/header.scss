@@ -27,6 +27,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  object-fit: cover;
 
   @include mobile {
     height: 38px;

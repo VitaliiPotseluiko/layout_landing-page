@@ -6,7 +6,7 @@
 
   box-sizing: border-box;
   height: 100vh;
-  background-color: #C2C2C2;
+  background-color: #c2c2c2;
 
   opacity: 0;
   pointer-events: none;
@@ -20,7 +20,6 @@
   text-transform: uppercase;
   vertical-align: middle;
   color: $menu_text_color;
-
 }
 
 .menu:target {
@@ -109,7 +108,6 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
-
 }
 
 .menu__booking {
