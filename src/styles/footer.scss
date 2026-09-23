@@ -1,19 +1,18 @@
 .footer {
-  grid-column: 1 / -1;
   margin-top: 182px;
-  background-image: url('../img/footer_img.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  object-fit: contain;
-  height: 555px;
+  width: 100%;
 
   @include tablet {
     margin-top: 120px;
-    height: 480px;
   }
 
   @include mobile {
     margin-top: 120px;
-    height: 455px;
   }
+}
+
+.footer img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
